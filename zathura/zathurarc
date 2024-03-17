@@ -1,0 +1,30 @@
+set default-bg "#000000"
+set default-fg "#d5d2be"
+set inputbar-bg "#000000"
+set inputbar-fg "#d5d2be"
+set statusbar-bg "#000000"
+set statusbar-fg "#d5d2be"
+
+set completion-bg "#000000"
+set completion-fg "#dddddd"
+set completion-group-bg "#000000"
+set completion-group-fg "#cccccc"
+set completion-highlight-bg "#444444"
+set completion-highlight-fg "#eeeeee"
+
+set notification-bg "#000000"
+set notification-fg "#f6f0e1"
+set notification-warning-bg "#464646"
+set notification-warning-fg "#e8e815"
+set notification-error-bg "#c64242"
+set notification-error-fg "#f6f0e1"
+
+set index-bg "#000000"
+set index-fg "#dddddd"
+set index-active-bg "#4f4f4f"
+set index-active-fg "#dddddd"
+
+set recolor-lightcolor "#000000"
+set recolor-darkcolor "#d5d2cc"
+
+set font "JetBrains Mono Medium 11"

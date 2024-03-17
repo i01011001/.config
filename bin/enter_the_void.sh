@@ -1,0 +1,6 @@
+export XDG_RUNTIME_DIR=/tmp/xdg-runtime-$(id -u)
+mkdir -p $XDG_RUNTIME_DIR
+
+
+river
+

@@ -1,0 +1,58 @@
+
+/*............about:config............. */
+/* uidensity */
+/* compact */
+/* customization */
+
+#TabsToolbar > .titlebar-buttonbox-container {
+  visibility: collapse !important;}
+
+/* /\* Panel/menu position *\/ */
+/* #PanelUI-button { */
+/*    display:none */
+}
+/* /\* Back Hide *\/ */
+/* #back-button{ */
+/*   -moz-box-ordinal-group: 0 !important; */
+/*   order: -2 !important; */
+/*   margin: 0px !important;} */
+
+/* /\* Remove extensions button *\/ */
+/* #unified-extensions-button { */
+/*   -moz-box-ordinal-group: 0 !important; */
+/*   order: -2 !important; */
+/*   margin: 0px !important; */
+/* } */
+
+
+/* /\* Forward Hide *\/ */
+/* #forward-button { display: none !important } */
+
+/* Site information button */
+#identity-box { display: none !important }
+
+/* #identity-icon-box, */
+#identity-permission-box,
+#star-button-box,
+#alltabs-button,
+#picture-in-picture-button,
+#tracking-protection-icon-container,
+#reader-mode-button,
+#translations-button {
+  display: none !important
+}
+
+/* /\* Simplifying interface *\/ */
+
+.titlebar-spacer {
+  display     : none !important;
+}
+
+/*================ DARK THEME ================*/
+.tab-close-button {
+  transition: all 0.3s ease !important;
+  border-radius: 4px !important;
+}
+
+.tabbrowser-tab .tab-label  { color: var(--uc-inverted-colour) !important; }
+.tab-close-button { fill: var(--uc-inverted-colour) !important }

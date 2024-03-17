@@ -1,0 +1,12 @@
+
+# # personal account
+# Host github.com
+# 	IdentityFile ~/.ssh/id_ion
+# 	User git
+# 	IdentitiesOnly yes
+
+# # work account
+Host github.com
+	IdentityFile ~/.ssh/id_nds
+	User git
+	IdentitiesOnly yes
