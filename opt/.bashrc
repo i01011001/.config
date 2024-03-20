@@ -6,6 +6,7 @@
 export PATH=$PATH:"~/.config/emacs/bin"
 
 alias ls='ls --color=auto'
+export LS_COLORS=$LS_COLORS:'ow=1;34:'
 alias source_idf='source $HOME/code/esp/esp-idf/export.sh'
 alias emc="emacsclient -c & emacsclient -na 'emacs'"
 

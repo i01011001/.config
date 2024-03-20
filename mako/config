@@ -2,7 +2,7 @@
 #   man 5 mako
 # To view all configuration options.
 
-font=fira code 11
+font=JetBrains Mono Medium 11
 # format=<b>%a ⏵</b> %s\n%b
 sort=-time
 output=eDP-1
