@@ -1,0 +1,12 @@
+return{
+  "noice.nvim",
+  opts={
+    notify = {
+      stages = "static",
+    },
+    cmdline = {
+      -- enabled = true,
+      -- view='mini'
+    },
+  },
+}
