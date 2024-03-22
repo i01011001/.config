@@ -6,10 +6,10 @@ vim.g.autoformat = false
 vim.opt.cursorline = false
 vim.opt.pumblend = 0
 
-vim.g.nord_contrast = false
-vim.g.nord_borders = false
-vim.g.nord_disable_background = false
-vim.g.nord_italic = false
-vim.g.nord_uniform_diff_background = false
+-- vim.g.nord_contrast = false
+vim.g.nord_borders = true
+-- vim.g.nord_disable_background = false
+-- vim.g.nord_italic = false
+-- vim.g.nord_uniform_diff_background = false
 vim.g.nord_bold = false
 

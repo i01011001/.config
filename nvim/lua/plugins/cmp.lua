@@ -13,6 +13,12 @@ return {
           scrollbar = false,
           winhighlight = "Normal:none,FloatBorder:none"
         },
+
+        suggestion = {
+          border = 'single',
+          scrollbar = false,
+          winhighlight = "Normal:None,FloatBorder:None"
+        },
       },
       formatting = {
         fields = { "abbr", "menu", "kind" },
