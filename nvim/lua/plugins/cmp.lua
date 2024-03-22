@@ -2,6 +2,18 @@ return {
   {
     "nvim-cmp",
     opts = {
+      window = {
+        completion = {
+          border = 'single',
+          scrollbar = false,
+          winhighlight = "Normal:none,FloatBorder:none"
+        },
+        documentation = {
+          border = 'single',
+          scrollbar = false,
+          winhighlight = "Normal:none,FloatBorder:none"
+        },
+      },
       formatting = {
         fields = { "abbr", "menu", "kind" },
         format = function(entry, item)
@@ -24,7 +36,6 @@ return {
 
           -- Get the completion entry text shown in the completion window.
           local content = item.abbr
-
           -- Set the fixed completion window width.
           if fixed_width then
             vim.o.pumwidth = fixed_width

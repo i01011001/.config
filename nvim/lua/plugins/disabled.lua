@@ -3,7 +3,7 @@ return {
   { "mini.pairs", enabled = false },
 
   { "catppuccin", enabled = false },
-  { "tokyonight", enabled = false },
+  { "tokyonight.nvim", enabled = false },
   { "nvim-treesitter-context", enabled = false },
   { "flash.nvim", enabled = false},
   -- { "nvim-notify", enabled = false },
