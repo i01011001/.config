@@ -1,5 +1,4 @@
-# .bashrc
-# If not running interactively, don't do anything
+#!/bin/bash
 
 [[ $- != *i* ]] && return
 
@@ -34,6 +33,6 @@ PS1='\[\e[37m\][ \W ] \$ \[\e[0m\]'
 
 export MOZ_DBUS_REMOTE=1
 export MOZ_ENABLE_WAYLAND=1
-export XDG_SESSION_TYPE=enter_the_void
+# export XDG_SESSION_TYPE=enter_the_void
 
 set -o vi
