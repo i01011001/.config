@@ -14,6 +14,7 @@
 riverctl background-color 0x000000
 riverctl border-color-focused 0x808080
 riverctl border-color-unfocused 0x404040
+riverctl border-color-urgent 0xA0A0A0
 
 # Set keyboard repeat rate
 riverctl set-repeat 50 300
@@ -34,12 +35,29 @@ rivertile -view-padding 2 -outer-padding 1 &
 
 # autostart
 
-dus &
+dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus &
 dbus-run-session pipewire &
 pipewire-pulse &
-wireplumber &
+# wireplumber &
 bat_alert &
 exec mako &
+
+# -----------------------x------------------------- #
+
+# Custom
+
+# Hide cursor when typing
+riverctl hide-cursor when-typing enabled 
+
+# Touchpad
+riverctl input pointer-1267-12632-ELAN050A:01_04F3:3158_Touchpad tap enabled
+riverctl input pointer-1267-12632-ELAN050A:01_04F3:3158_Touchpad natural-scroll enabled
+
+# # Cursor-warp
+# riverctl set-cursor-warp on-output-change
+
+# Attach 
+riverctl attach-mode bottom
 
 # -----------------------x------------------------- #
 
@@ -111,8 +129,8 @@ riverctl map-pointer normal Super BTN_LEFT move-view
 # Super + Right Mouse Button to resize views
 riverctl map-pointer normal Super BTN_RIGHT resize-view
 
-# Super + Middle Mouse Button to toggle float
-riverctl map-pointer normal Super BTN_MIDDLE toggle-float
+# # Super + Middle Mouse Button to toggle float
+# riverctl map-pointer normal Super BTN_MIDDLE toggle-float
 
 for i in $(seq 1 9)
 do

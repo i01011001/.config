@@ -2,12 +2,11 @@
 
 [[ $- != *i* ]] && return
 
-export PATH=$PATH:"~/.config/emacs/bin"
+export LS_COLORS=$LS_COLORS:'ow=1;34:'
+
+export PATH=$PATH:"$HOME/code/esp/esp-idf"
 
 alias ls='ls --color=auto'
-export LS_COLORS=$LS_COLORS:'ow=1;34:'
-alias source_idf='source $HOME/code/esp/esp-idf/export.sh'
-alias emc="emacsclient -c & emacsclient -na 'emacs'"
 
 alias make_dwl="cd ~/.config/dwl/ && rm config.h && sudo make clean install && cd ~"
 
@@ -19,10 +18,6 @@ fcd() {
 
 fnvim() {
 	nvim "$(rg . --files --hidden | fzf)"
-}
-
-efnvim() {
-	foot -e nvim "$(rg . --files --hidden | fzf)" &
 }
 
 #shorcut for directory
