@@ -35,8 +35,8 @@ return {
 					fg2 = "#abb1bb", -- Darker fg (status line)
 					fg3 = "#7e8188", -- Darker fg (line numbers, fold colums)
 
-					sel0 = "#131922", -- 55% darkened from stock
-					sel1 = "#4f5b70", -- Popup sel bg, search bg
+					sel0 = "#212528", -- 55% darkened from stock
+					sel1 = "#686b70", -- Popup sel bg, search bg
 				},
 			},
 		})

@@ -18,7 +18,18 @@ return {
 
 		local keymap = vim.keymap -- for conciseness
 
+		require("lspconfig.ui.windows").default_options.border = "single"
+
+		vim.diagnostic.config({ float = { border = "single" } })
+
+		vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+			underline = false,
+			virtual_text = false,
+			float = { border = "single" },
+		})
+
 		vim.api.nvim_create_autocmd("LspAttach", {
+
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 			callback = function(ev)
 				-- Buffer local mappings.
