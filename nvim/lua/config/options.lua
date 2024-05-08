@@ -41,3 +41,7 @@ opt.mouse:append("a")
 opt.clipboard:append("unnamedplus")
 opt.modifiable = true
 opt.showcmd = false
+opt.mouse = ""
+
+--lsp
+vim.lsp.set_log_level("off")

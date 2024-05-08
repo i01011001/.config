@@ -23,7 +23,7 @@ require("lazy").setup({
 		lazy = false,
 		version = false,
 	},
-	install = { colorscheme = { "nordfox" } },
+	install = { colorscheme = { "no-clown-fiesta" } },
 	checker = { enabled = true }, -- automatically check for plugin updates
 	performance = {
 		rtp = {

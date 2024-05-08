@@ -34,11 +34,6 @@ rivertile -view-padding 2 -outer-padding 1 &
 # -----------------------x------------------------- #
 
 # autostart
-
-dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus &
-dbus-run-session pipewire &
-pipewire-pulse &
-# wireplumber &
 bat_alert &
 exec mako &
 

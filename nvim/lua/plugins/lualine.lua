@@ -23,13 +23,12 @@ return {
 				},
 			},
 			sections = {
-				lualine_a = { "filename" },
-				lualine_b = { "branch", "diff", "diagnostics" },
+				lualine_a = { "" },
+				lualine_b = { "branch", "diagnostics", "diff" },
 				lualine_c = { "" },
-				lualine_x = { "filetype" },
+				lualine_x = { "" },
 				lualine_y = { "progress" },
-				lualine_z = { "" },
-				-- lualine_z = { "location" },
+				lualine_z = { "location" },
 			},
 			inactive_sections = {
 				lualine_a = {},
